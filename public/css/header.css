@@ -1,0 +1,29 @@
+  div{
+  	background:#f4f4f4;
+  	height:35px;
+  }
+  ul b{
+  font-size:10px;
+  color:#bbb;	
+  }
+#top_1{
+	width:100%;}
+.top{
+	width:80%;
+	margin:0 auto;
+}
+.top li{
+	float:left;		
+}
+.log_1 li{
+	
+	float:right;	
+ }
+.top a {
+	width:76px;
+	height:36px;
+	text-decoration: none;
+	color:#d1ae93;
+	font-size:12px;
+	margin:0 15px;
+}

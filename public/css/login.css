@@ -1,0 +1,263 @@
+*{
+	text-decoration: none;
+}
+body{
+	font-size:12px;
+	color:#888;
+	background:#f5f5f5;
+	line-height:22px;
+	width:960px;
+		margin:0 auto;
+}
+  .login_top1{
+  	width:100%;
+	height:100px;
+	float: left;
+   }
+ .yd_nav{
+ 	float:right;
+ 	width:230px;
+ 	height:34px;
+ 	margin-top:60px;
+ 	position:relative;
+ }
+ .yd_nav span{
+ 	width:36px;
+ 	height:28px;
+ 	box-sizing: border-box;
+ 	padding:1px 0px 0;	
+ 	text-align: center;
+ }
+  .yd_nav  a{
+ 	width:36px;
+  	height:28px;
+  color:#333;
+  }
+    .yd_nav  a:hover{
+    	color:#f00;
+    	text-decoration:underline;
+    }
+  .sp_more{
+ 
+  	box-sizing: border-box;
+  	float:right;
+  	width:47px;
+  	   height:30px;
+  	position:absolute;
+  	top:-4px; right:0px;
+  	background:url(../img/images/login.png) no-repeat -255px -98px;
+  
+  
+  }
+  .sp_more_top{
+  	padding:0px 4px 0 6px;
+  	position: relative;
+  	 	display: block;
+  	  	width:47px;
+  	   height:30px;
+  		border:1px solid #f5f5f5;	
+  		z-index:999;
+  	    line-height: 30px;
+  }
+  .nav_s1{
+  	position: absolute;
+  	top:28px;right:-1px;
+  	display:none;
+  	width:120px;
+  	background:#fff;
+  	border:1px solid #ccc;
+  	z-index:3;
+  }
+    .sp_more:hover .sp_more_top{
+    	background: #fff;
+    	  border:1px solid #ccc;
+    	  border-bottom:0;
+    	background:url(../img/images/login.png) no-repeat -256px -136px #fff;	
+    }
+    .sp_more:hover .nav_s1{
+    	display: block;
+           }
+  .nav_s1 li{ 
+  border-bottom:1px solid #eee;
+  height:30px;
+  line-height:30px;
+  padding-left:10px;
+  }
+  .nav_s1 li:hover{ 
+   background:#E5F2F7;
+  }
+  .content_dl{
+  	clear: both;
+  	width:960px;
+  	height:480px;
+  	border:1px solid #ddd;
+  	background:#fff;
+  	position: relative;
+  }
+  .cont_left{
+  	box-sizing: border-box;
+  	width:645px;
+  	height:271px;
+  	padding:10px 0 10px 35px;
+  	
+  }
+  h2{
+  	font-size:24px;
+  	margin-top:50px;
+  	padding-left:50px;
+  	font-family: "微软雅黑";
+  	color:#333;
+  	line-height: 30px;
+  }
+	  .list{
+	  		margin-top:20px;
+	  	padding-left:50px;
+	  	
+	  }
+	.list li{
+		height: 45px;
+	 padding: 6px 0px;
+	 overflow: hidden;
+	 line-height: 40px;
+	 color: #666;
+	 font-size: 14px
+	}
+	.list input{
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	border:0;
+	background:none;
+	padding-left: 4px;
+	width:290px;	
+	}
+   .r2{
+   	    float: left;
+    height: 36px;
+    padding: 2px 3px;
+    margin-right: 10px;
+    line-height: 36px;
+    background: url(../img/images/login.png) no-repeat 0px -40px;
+   }
+   .r1{
+   	float: left;
+width: 80px;
+height: 40px;
+font-size: 14px;
+text-align: right;
+color: #c98e52;
+   	
+   }
+  .list .login_btn{
+ 	background: url(../img/images/login.png) no-repeat 0px -185px;
+width: 120px;
+height: 36px;
+border: 0px;
+float: left;
+margin-right: 10px;
+cursor: pointer;
+font-size: 18px;
+font-family: 微软雅黑,黑体;
+color: #fff;
+font-weight: bold;
+text-align: center;
+line-height: 36px;
+ 	
+ }
+  .list .login_btn:hover{
+ 	
+ 	background: url(../img/images/login.png) no-repeat 0px -495px;	
+ }
+  .list :last-child a{
+ 	color:#ff6600;
+ 	
+ }
+  .list :last-child a:hover{
+        text-decoration: underline;
+ 
+}
+  .cont_right{
+  	box-sizing: border-box;
+
+	width:260px;
+	height:480px;
+	padding: 10px 10px 10px 50px;
+	position: absolute;
+	top:0px;right:0px;
+	background:url(../img/images/rightbg.png) repeat-y top left;
+	
+}
+.cont_right h2
+ 	{
+    font-size: 24px;
+    font-family: "微软雅黑";
+    color: #333;
+    line-height: 30px;
+ }
+.cont_right ul{
+	margin-top:20px;
+	
+}
+
+.cont_right li{
+	font-size: 14px;
+padding: 10px 0px;
+overflow: hidden;
+color: #666;
+
+	
+}
+.cont_right .button_regist{
+	 width: 120px;
+    background: url("../img/images/login.png") no-repeat 0 -185px;
+    font-family: 微软雅黑,黑体;
+    font-size: 18px;
+	height:36px;
+	cursor:pointer;
+	font-weight: bold;
+	text-align: center;
+	line-height: 36px;
+	border-radius:3px ;
+	color: #fff;
+	display: block;
+	background-position:0px -141px;
+}
+.button_regist:hover{
+	background: url("../img/images/login.png") no-repeat 0 -451px;
+	
+}
+.button_qq{
+     display: block;
+	background: url(../img/images/login.png) no-repeat -128px -131px;
+	width: 110px;
+  height: 32px;
+   margin-right: 6px;
+}
+.button_qq:hover{
+	background-position:-128px -441px;
+	
+}
+.button_sina{
+	display: block;
+	background: url(../img/images/login.png) no-repeat -128px -91px;
+	width: 110px;
+  height: 32px;
+   margin-right: 6px;	
+}
+.button_sina:hover{
+	background-position: -128px -401px;
+	
+}
+.button_renren{
+		display: block;
+	background: url(../img/images/login.png) no-repeat -128px -171px;
+	width: 110px;
+  height: 32px;
+   margin-right: 6px;
+	
+}
+.button_renren:hover{
+	background-position: -128px -481px;
+	
+}

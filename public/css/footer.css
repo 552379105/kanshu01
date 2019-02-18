@@ -1,0 +1,33 @@
+  .foot{
+  background:#373737;
+	height:230px;
+  	color:#cdcdcd;
+  	padding-top:30px;
+  }
+  .f1{
+  	width:500px;
+  	height:40px;
+  	margin:0 auto;
+  }
+.f1 li{
+	float:left;	
+}
+.f1 li a{
+	color:#cdcdcd;
+	text-decoration:none;
+	margin-right:8px;
+	margin-left:8px;
+}
+.f1 li a:hover{
+	color:#b08751;
+}
+
+
+.foot .f2 {
+	height:30px;
+	width:1400px;
+	font-size:14px;
+	line-height:30px;
+	text-align:center;
+	
+}

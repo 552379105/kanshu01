@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>404</title>
+<meta name="description" content="绝品鬼医小说首发看书网,本站提供绝品鬼医最新章节在线阅读,欢迎收藏以便下次阅读." />
+
+<link href="http://img.kanshu.com/pageend/css/lastpage_new.css?t=201706231452" rel="stylesheet" type="text/css" />
+<link href="http://img.kanshu.com/2013/ksnew/css/headernew.css?t=201706231452" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://img.kanshu.com/ext/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://img.kanshu.com/2013/user/loginnew.js?t=201706231452"></script>
+<script type="text/javascript" src="http://img.kanshu.com/pageend/js/script_new.js?t=201706231452"></script>
+<script type="text/javascript">
+$(function(){
+	$(".p_more").find('span').bind('mouseenter',function () {
+		var p_d = $(this).parent();
+		p_d.find('span').removeClass('hover');
+		
+	    $(this).addClass("hover");
+	    
+	    //列表切换交互
+	    var o = p_d.parent().parent();
+	    
+	    var ul = o.find('.ph_box').find('ul');
+	    if (p_d.find('span').eq('1').attr('class') == 'hover') {
+	    	ul.hide();
+	    	ul.eq('1').show();
+	    } else {
+	    	ul.hide();
+	    	ul.eq('0').show();
+	    }
+	});
+	
+	$('.top_nav_box').find('.select').removeClass('select');
+})
+</script>
+</head>
+
+
+<body>
+<div class="warpper">
+    <link href="http://img.kanshu.com/user/css/loginBox.css?t=20111215" rel="stylesheet" type="text/css" />
+	<div class="top_new">
+		<div class="top">
+			<div class="top_l">
+				<a onclick="favorite()" href="##">收藏看书网</a>
+				&nbsp;&nbsp;
+				<a id="StranLink" name="StranLink">
+					繁体版
+				</a>
+				&nbsp;&nbsp;
+				<a href="http://help.kanshu.com/wap/">手机阅读</a>
+			</div>
+			<div id="topajax">
+				<a class="t_a top_zhuce" href="http://www.kanshu.com/new/user/pcRegister"
+				rel="nofollow">
+				</a>
+				<a class="t_a top_denglu" id="goLoginPage" href="http://www.kanshu.com/new/login/showLogin#http://www.kanshu.com/"
+				rel="nofollow">
+				</a>
+				<a class="t_a top_sina" title="微博登录" href="javascript:void(0);" onclick="ortherLogin('sina');return false;">
+					微博登录
+				</a>
+				<a class="t_a top_qq" title="QQ登录" href="javascript:void(0);" onclick="ortherLogin('qq');return false;">
+					QQ登录
+				</a>
+				<a href="http://www.kanshu.com/news/help">帮助</a>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript">
+			var HOST_HOST = "http://www.kanshu.com/";
+			var url = window.location.href;
+			var arr = url.split("/");
+			if (arr[3] != "user") {
+				if (arr[3] == "author" && arr[4] != "authorLogin") {
+					$("#goLoginPage").attr("href", HOST_HOST + "new/login/showLogin#" + url);
+					$("#fc_login").attr("href", HOST_HOST + "new/login/showLogin#" + url);
+					$("#fc_login2").attr("href", HOST_HOST + "new/login/showLogin#" + url);
+				} else {
+					$("#goLoginPage").attr("href", HOST_HOST + "new/login/showLogin#" + url);
+					$("#fc_login").attr("href", HOST_HOST + "new/login/showLogin#" + url);
+					$("#fc_login2").attr("href", HOST_HOST + "new/login/showLogin#" + url);
+				}
+			}
+			function ortherLogin(t) {
+				var url = window.location.href;
+				window.location = HOST_HOST + "new/login/" + t + "?url=" + url;
+			}
+		</script>
+		<div class="top_header">
+			<div class="logo">
+				<a href="http://www.kanshu.com/">
+					<img src="http://img.kanshu.com/2013/ksnew/images/kstestlogo.png" />
+				</a>
+			</div>
+			<div class="seach">
+				<div id="seach_menu" class="seach_menu">
+					<p>
+						综合
+					</p>
+					<ul class="s_ul" style="display:none">
+						<span href="javascript:void(0);" onmousemove="this.className='sp_bg'" onmouseout="this.className=''">
+							综合
+						</span>
+						<span href="javascript:void(0);" onmousemove="this.className='sp_bg'" onmouseout="this.className=''">
+							书名
+						</span>
+						<span href="javascript:void(0);" onmousemove="this.className='sp_bg'" onmouseout="this.className=''">
+							作者
+						</span>
+						<span href="javascript:void(0);" onmousemove="this.className='sp_bg'" onmouseout="this.className=''">
+							简介
+						</span>
+					</ul>
+				</div>
+				<div class="seach_txt">
+					
+					<input name="searchText" id="searchText" onclick="if(this.value=='请输入你要搜索的小说名/作者名/简介内容')this.value=''" onblur="if(this.value=='')this.value='请输入你要搜索的小说名/作者名/简介内容'" type="text" value="请输入你要搜索的小说名/作者名/简介内容" autocomplete="off" onkeydown="if(event.keyCode==13)searchlist()" />
+					<input name="sort" id="searchSort" type="hidden" value="1" />
+				</div>
+				<div class="seach_btn">
+					<input name="" type="button" value=" " onclick="searchlist()"/>
+				</div>
+			</div>
+			<div class="head_info">
+				<div id="majax">
+					<div class="wdsj_btn" id="record_wrap">
+						<div class="record_btn">
+							<a href="http://www.kanshu.com/bookrack/myBookrack" rel="nofollow">
+								我的书架
+							</a>
+						</div>
+						<div class="book_record" style="display:none">
+							<div class="record_tab"><span class="cur">阅读记录</span><span>书架记录</span><span class="sep"></span></div>
+							<div class="record_box" id="record_read">
+								<div class="record_tip">如要永久保存记录，请阅读后将作品加入书架</div>
+								<div class="record_inner">
+									<p class="record_none">您暂时没有阅读记录</p>
+								</div>
+								<div class="record_more"><a href="javascript://" id="record_clear">清除记录</a></div>
+							</div>
+							<div class="record_box" id="record_books" style="display:none">
+								<div class="record_inner">
+									<p class="record_none">请<a href="http://www.kanshu.com/new/login/showLogin">登录</a>查看书架记录</p>
+								</div>
+								<div class="record_more"><a href="http://www.kanshu.com/bookrack/myBookrack">进入书架</a></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="sqzz_btn">
+						<a target="_blank" href="http://pay.kanshu.com/" class="aaa" rel="nofollow">充值</a>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="top_nav clearfix">
+			<div class="top_nav_box">
+				<ul>
+					<li><a href="http://www.kanshu.com/" class="select" rel="nofollow">首页</a></li>
+					<li><a href="http://top.kanshu.com/">小说排行榜</a></li>
+					<li><a href="http://all.kanshu.com/">小说书库</a></li>
+					<li><a href="http://mm.kanshu.com/">女生言情网</a></li>
+					<li class="new"><a target="_blank" href="http://news.kanshu.com/zt/2011/fuli/" class="aaa">作者福利</a><img src="http://img.kanshu.com/public/images/newtb.gif"></li>
+					<li class="new"><a href=" http://www.kanshu.com/webeditor/" rel="nofollow">网编专区</a><img src="http://img.kanshu.com/public/images/newtb.gif"></li>
+					<li><a href="http://www.kanshu.com/author/applyAuthors" rel="nofollow">申请作者</a></li>
+
+				</ul>
+			</div>
+			<div class="top_nav_cata">
+				<ul>
+					<li><a href="http://xuanhuan.kanshu.com" target="_blank">玄幻·奇幻</a></li>
+					<li><a href="http://wuxia.kanshu.com" target="_blank">武侠·仙侠</a></li>
+					<li><a href="http://dushi.kanshu.com" target="_blank">都市</a>·<a href="http://mm.kanshu.com" target="_blank">言情</a></li>
+					<li><a href="http://lishi.kanshu.com" target="_blank">历史·军事</a></li>
+					<li><a href="http://wangyou.kanshu.com" target="_blank">网游·竞技</a></li>
+					<li><a href="http://kehuan.kanshu.com" target="_blank">科幻·灵异</a></li>
+					<li><a href="http://quanben.kanshu.com/" class="active">全本小说</a></li>
+					<li><a href="http://www.kanshu.com/mianfei/" class="active">免费小说</a></li>
+					<li><a href="http://www.kanshu.com/baoyue" class="active">包月作品</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="b404">
+		<img src="http://img.kanshu.com/404/images/img404.png" />
+	</div>
+    <div class="ct1 cont" style="height: 316px;">
+    	
+    	<div class="left_cont">
+        	<div class="c_mian" style="border: 1px solid #ddd;width:958px;">
+                <div class="c_title">
+                <h3>新书榜</h3><div class="clear"></div></div>
+                <div class="shu_cont">
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="浮屠天尊" href="http://www.kanshu.com/artinfo/2025396.html"><img alt="浮屠天尊" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2025396/2025396_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="浮屠天尊" href="http://www.kanshu.com/artinfo/2025396.html">浮屠天尊</a></h4>
+                            <p>天才少年左飞惨遭族中胞兄残害，葬身于江中，怎料天降奇遇，得到帝灭浮屠，更是百尺竿头更进一步！
+夺族权、杀仇人、斩妖邪！谁与争锋。</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="异世之混沌天尊" href="http://www.kanshu.com/artinfo/2025385.html"><img alt="异世之混沌天尊" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2025385/2025385_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="异世之混沌天尊" href="http://www.kanshu.com/artinfo/2025385.html">异世之混沌天尊</a></h4>
+                            <p>三千大世界之中最后一块净土，人类苦苦挣扎在灭亡的边缘上，谁能拯救他们？一个连自己都不清楚自己是谁的少年无意中获得了一本奇怪的功法，萧炎、雷翔、唐三、阿呆这些传说中的人物气运凝聚一身。这个少年又能走出怎样的人生……</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="剑天子" href="http://www.kanshu.com/artinfo/2025943.html"><img alt="剑天子" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2025943/2025943_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="剑天子" href="http://www.kanshu.com/artinfo/2025943.html">剑天子</a></h4>
+                            <p>无法修行的少年东阳，独自来到大夏王朝的皇城，寻找治病之法，在被四门一家全部拒之门外后，误入已经荒败的长生观，接连不断的麻烦随之而来！！
+剑之心：君子之道！
+天子之心：仁者之道！！
+“你们有剑，却无剑之心，觊觎天下，却无天子之心……”</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="全能法神" href="http://www.kanshu.com/artinfo/2027145.html"><img alt="全能法神" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2027145/2027145_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="全能法神" href="http://www.kanshu.com/artinfo/2027145.html">全能法神</a></h4>
+                            <p>这是个只有魔法的世界，108种符号排列组合，构成万千魔法。
+有冰雷火风的元素类魔法，探究人体极限的武道类魔法，构建万器的炼金类魔法，诡异歹毒的邪恶类魔法，更有以人为兽的兽魂类魔法……</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="尸兄娶你" href="http://www.kanshu.com/artinfo/2026716.html"><img alt="尸兄娶你" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2026716/2026716_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="尸兄娶你" href="http://www.kanshu.com/artinfo/2026716.html">尸兄娶你</a></h4>
+                            <p>人鬼殊途，末路</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="杀人微信群" href="http://www.kanshu.com/artinfo/2025784.html"><img alt="杀人微信群" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2025784/2025784_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="杀人微信群" href="http://www.kanshu.com/artinfo/2025784.html">杀人微信群</a></h4>
+                            <p>突然一天，我们班微信群来了一个叫死神的人，自此之后……一宗宗变态恶心的杀人案开始上演。
+
+而我，则是被死神盯上的一个人。</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="错婚" href="http://www.kanshu.com/artinfo/2025870.html"><img alt="错婚" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2025870/2025870_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="错婚" href="http://www.kanshu.com/artinfo/2025870.html">错婚</a></h4>
+                            <p>如花似玉的老婆彻夜未归！谎言，豪车，名表，甚至还有被撕破的衣服。这一切都预示着，我被带了绿帽子。
+老婆的中年上司？小区的保安队长？谁他么才是真正的奸夫？
+然而当我发现真正的“那个人”之后，却只能忍辱偷生！！！</p>
+                        </div>
+                    </div>
+                                        <div class="shu_box">
+                        <div class="shu_img"><a title="人唱鬼戏" href="http://www.kanshu.com/artinfo/2026949.html"><img alt="人唱鬼戏" onerror="this.src='http://img.kanshu.com//articleInfo/images/nopic.jpg'" src="http://file.kanshu.com//upload/article/2026949/2026949_s.jpg"></a></div>
+                        <div class="shu_xinxi">
+                            <h4><a title="人唱鬼戏" href="http://www.kanshu.com/artinfo/2026949.html">人唱鬼戏</a></h4>
+                            <p>我跟着师傅去给人棺材敲头，没想到遇上了鬼戏班上场，雄赳赳一个孙悟空登场，举棒便杀人！师傅看不过眼，跳上台去，扮演如烟降猴子。没想到就是这么一出戏，把我们牵扯到了一个尴尬的境地。</p>
+                        </div>
+                    </div>
+                                        <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+    <div>
+    <!-- 广告位：ksw-M-1 -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '2836997',
+        container: s,
+        size: '960,90',
+        display: 'inlay-fix'
+    });
+})();
+</script>
+<script src="http://dup.baidustatic.com/js/os.js"></script>
+    </div>
+  <div class="ct3">
+    	<div class="ph_cont w306">
+        		<div id="tt_11" class="ph_tit">
+   		    		<h3>红花榜</h3><div class="clear"></div>
+   		    		<p class="p_more"><span class="hover">周</span><span>月</span></p>
+   		    	</div>
+                <div id="mm_11" class="ph_box">
+   				    
+                    
+                            <ul>
+                               <li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/123278.html" target="_blank">
+                                            逆道成仙
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115474.html" target="_blank">
+                                            仙道神魔
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115405.html" target="_blank">
+                                            乱天古道
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115343.html" target="_blank">
+                                            剑道独尊
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115505.html" target="_blank">
+                                            紫羽飞仙
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115504.html" target="_blank">
+                                            战破天宇
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115495.html" target="_blank">
+                                            天帝重修
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115423.html" target="_blank">
+                                            斗战傲天
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115492.html" target="_blank">
+                                            龙饮血
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115489.html" target="_blank">
+                                            贪生
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul style="display:none;">
+                                <li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/48826.html" target="_blank">
+                                            都市特种兵
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        2
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2013565.html" target="_blank">
+                                            女神的兼职司机
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        1
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2024344.html" target="_blank">
+                                            平步云霄
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        1
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2026287.html" target="_blank">
+                                            极品鉴宝
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        1
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/123278.html" target="_blank">
+                                            逆道成仙
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115474.html" target="_blank">
+                                            仙道神魔
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115405.html" target="_blank">
+                                            乱天古道
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115343.html" target="_blank">
+                                            剑道独尊
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115505.html" target="_blank">
+                                            紫羽飞仙
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/115504.html" target="_blank">
+                                            战破天宇
+                                        </a>
+                                    </span>
+                                    <span class="sp_data2">
+                                        0
+                                    </span>
+                                </li>
+                            </ul>
+                         
+                        
+          </div>
+   	</div>
+            <div class="ph_cont w306">
+        		<div id="tt_12" class="ph_tit">
+   		    		<h3>VIP热销榜</h3><div class="clear"></div>
+   		    		<p class="p_more"><span class="hover">周</span><span>月</span></p><div class="clear"></div></div>
+                <div id="mm_12" class="ph_box">
+     				 
+                          
+                            <ul>
+                                <li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/52572.html" target="_blank">
+                                            绝品透视
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/546405" target="_blank">
+                                         小妖
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2018922.html" target="_blank">
+                                            另类保镖：美女总裁爱上我
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110759707" target="_blank">
+                                         风流小二
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2015022.html" target="_blank">
+                                            护花高手在都市
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110692720" target="_blank">
+                                         心在流浪
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2026185.html" target="_blank">
+                                            我的青春期
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110827445" target="_blank">
+                                         阿刀
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2019654.html" target="_blank">
+                                            最强小厨师
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110778200" target="_blank">
+                                         随性
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/48826.html" target="_blank">
+                                            都市特种兵
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/6212002" target="_blank">
+                                         无冬夜
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/25415.html" target="_blank">
+                                            贴身保安
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/1674057" target="_blank">
+                                         深海游龙
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2011687.html" target="_blank">
+                                            修仙狂徒
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110586259" target="_blank">
+                                         王小蛮
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/153372.html" target="_blank">
+                                            极品兵王
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/741790" target="_blank">
+                                         血欲
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2011835.html" target="_blank">
+                                            校园绝品狂徒
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110586259" target="_blank">
+                                         柳江南
+		                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul style="display:none;">
+                                <li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2018922.html" target="_blank">
+                                            另类保镖：美女总裁爱上我
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110759707" target="_blank">
+                                         风流小二
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/81609.html" target="_blank">
+                                            天生财术
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/4419675" target="_blank">
+                                         军用刺刀
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/52572.html" target="_blank">
+                                            绝品透视
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/546405" target="_blank">
+                                         小妖
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/50260.html" target="_blank">
+                                            步步青云
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/1269992" target="_blank">
+                                         飘逸居士
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/25415.html" target="_blank">
+                                            贴身保安
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/1674057" target="_blank">
+                                         深海游龙
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2015022.html" target="_blank">
+                                            护花高手在都市
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110692720" target="_blank">
+                                         心在流浪
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2026185.html" target="_blank">
+                                            我的青春期
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110827445" target="_blank">
+                                         阿刀
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2014457.html" target="_blank">
+                                            随身带着一亩地
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110676204" target="_blank">
+                                         我吃大玉米
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2011687.html" target="_blank">
+                                            修仙狂徒
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110586259" target="_blank">
+                                         王小蛮
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/153844.html" target="_blank">
+                                            神级保安
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/109064578" target="_blank">
+                                         三藏大师
+		                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul style="display:none;">
+                                <li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/52572.html" target="_blank">
+                                            绝品透视
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/546405" target="_blank">
+                                         小妖
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/12881.html" target="_blank">
+                                            美女图
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/941524" target="_blank">
+                                         我是多余人
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/25415.html" target="_blank">
+                                            贴身保安
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/1674057" target="_blank">
+                                         深海游龙
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/31769.html" target="_blank">
+                                            神控天下
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/2936479" target="_blank">
+                                         我本纯洁
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/20717.html" target="_blank">
+                                            极品纨绔
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/1780371" target="_blank">
+                                         左妻右妾
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/48826.html" target="_blank">
+                                            都市特种兵
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/6212002" target="_blank">
+                                         无冬夜
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2018922.html" target="_blank">
+                                            另类保镖：美女总裁爱上我
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110759707" target="_blank">
+                                         风流小二
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/67002.html" target="_blank">
+                                            混沌天体
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/2391638" target="_blank">
+                                         骑着蜗牛去旅行
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/188349.html" target="_blank">
+                                            超级透视
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/108186163" target="_blank">
+                                         颜祯
+		                        </a>
+                                    </span>
+                                </li><li>
+                                    <span class="sp_name">
+                                         <a href="/artinfo/2015022.html" target="_blank">
+                                            护花高手在都市
+                                        </a>
+                                    </span>
+                                    <span class="sp_data">
+                                        <a href="/home/user/110692720" target="_blank">
+                                         心在流浪
+		                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                            
+                        
+              </div>
+   	</div>
+            <div class="ph_cont w306 no">
+        		<div id="tt_13" class="ph_tit">
+   		    		<h3>全本人气榜</h3><div class="clear"></div>
+   		    		<p class="p_more"><span class="hover">周</span><span>月</span></p></div>
+                <div id="mm_13" class="ph_box">
+     				 <ul>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/175366.html">长生歌</a></span><span class="sp_data">40211</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/186177.html">霸道总裁极品爱</a></span><span class="sp_data">35766</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/52109.html">桃运兵王</a></span><span class="sp_data">6499</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/52572.html">绝品透视</a></span><span class="sp_data">3636</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/2017213.html">婚宠撩人，老婆不要跑</a></span><span class="sp_data">2106</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/12881.html">美女图</a></span><span class="sp_data">2070</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/6970.html">逆天神剑</a></span><span class="sp_data">2034</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/163198.html">兵王下山</a></span><span class="sp_data">1805</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/50260.html">步步青云</a></span><span class="sp_data">1358</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/182471.html">绝品狂少</a></span><span class="sp_data">1278</span></li>
+</ul>
+<ul style="display:none;">
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/175366.html">长生歌</a></span><span class="sp_data">264180</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/186177.html">霸道总裁极品爱</a></span><span class="sp_data">201676</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/52109.html">桃运兵王</a></span><span class="sp_data">65831</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/52572.html">绝品透视</a></span><span class="sp_data">18736</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/12881.html">美女图</a></span><span class="sp_data">12151</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/121930.html">星空君王</a></span><span class="sp_data">11029</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/182471.html">绝品狂少</a></span><span class="sp_data">10794</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/163198.html">兵王下山</a></span><span class="sp_data">10336</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/188349.html">超级透视</a></span><span class="sp_data">7952</span></li>
+	<li><span class="sp_name"><a href="http://www.kanshu.com/artinfo/25415.html">贴身保安</a></span><span class="sp_data">6187</span></li>
+</ul>
+              </div>
+   	</div>
+    <div class="clear"></div>
+    </div>
+    
+   <div class="footer">
+  <p class="p_01"><a href="http://about.kanshu.com/" rel="nofollow">关于看书网</a>|<a href="http://about.kanshu.com/contactus.htm" rel="nofollow">联系我们</a>|<a href="http://about.kanshu.com/cpyc.htm" rel="nofollow">诚聘英才</a>|<a href="http://about.kanshu.com/swhz.htm" rel="nofollow">商务合作</a>|<a href="http://about.kanshu.com/friendlink.htm" rel="nofollow">友情链接</a></p>
+  <p>本站所收录所有<a href="http://xuanhuan.kanshu.com/">玄幻小说</a>、<a href="http://mm.kanshu.com/">言情小说</a>、<a href="http://dushi.kanshu.com/">都市小说</a>及其它各类<a href="http://www.kanshu.com/">小说</a>作品、<a href="http://www.kanshu.com/">小说阅读网</a>、<a href="http://www.kanshu.com/artinfo/">免费小说阅读网</a>、小说评论均属其个人行为，不代表本站立场。</p>
+  <p>Copyright (C) 2004-2013 <a href="http://www.kanshu.com/">看书网</a> All Rights Reserved 成都古羌科技有限公司 版权所有</p>
+  <p>蜀ICP备05000570号 电信增值业务许可证：川B2-20100073</p>
+  <p>网络文化经营许可证：川网文[2011]0207-6号</p>
+</div>
+<script language="javascript">
+//帮助浮动JS
+function showHelp()
+{
+	if($("#helpVal").val()==0)
+	{
+		$('#opinion').animate({width:'534px'});
+		$("#helpVal").val(1);
+		$("#op_t1").hide();
+		$("#op_t2").show();
+	}else{
+		$('#opinion').animate({width:'40px'});
+		$("#helpVal").val(0);
+		$("#op_t2").hide();
+		$("#op_t1").show();
+	}
+}
+function goyijian()
+{
+	var type=$(":radio[name='yjGroup']:checked").val();
+	var yjcontent=$("#yjcontent").val();
+	if(yjcontent.length==0)
+	{
+		infBox("请输入意见内容");
+		$("#yjcontent").focus();
+		return false;
+	}
+	try{
+		$.getScript(JS_HOST_HOST+"user/bug?yjtype="+type+"&yjcontent="+yjcontent,
+		function(){
+				try
+				{
+					if(msg=="111")
+					{
+						publicalertinfo("提交成功，谢谢您的支持","no",4);
+						$("#yjcontent").val("");
+						showHelp();
+					}else{
+						publicalertinfo("提交失败，请稍后重试","no",2);
+					}
+				}
+				catch(error)
+				{
+					publicalertinfo("提交失败，请稍后重试","no",2);
+				}
+			});
+	}catch(error){
+		publicalertinfo("提交失败，请稍后重试","no",2);
+	}
+}
+function showXianxi(id)
+{	
+	//$("#opin_cont").css("display","none");	
+	$("#serv_box").css("display","none");
+	var xiangval=$("#xiangval"+id).val();
+	if(xiangval==0)
+	{
+		$("#helpxiangbox"+id).css("display","");
+		$("#xiangval"+id).val(1);
+		$("#code"+id).html("-");
+	}else{
+		$("#helpxiangbox"+id).css("display","none");
+		$("#xiangval"+id).val(0);
+		$("#code"+id).html("+");
+	}
+}
+
+</script>
+
+ <input type="hidden" id="helpVal" value="0"  />
+  <div id="opinion" style="width:40px; overflow:hidden;" >
+        <div class="opin_left">
+            <div class="opin_tit" onclick="showHelp();" style="cursor:pointer;"><span id="op_t1" class="op_t1"  onmousemove="this.className='op_t11'" onmouseout="this.className='op_t1'" ></span><span id="op_t2" class="op_t2"  onmousemove="this.className='op_t22'" onmouseout="this.className='op_t2'" style="display:none;"></span></div>
+        </div>
+        <div class="opin_right">
+            <div id="opin_cont">       
+            	<form action="" method="get">
+                    <h3 class="yj_tit">提点意见吧</h3>
+                    <p>欢迎对看书网新版提出您的建议，我们期待聆听您的声音，以便做到最好。</p>
+                    <p>类型：<label for="tjtype1"><input type="radio" name="yjGroup" value="1" id="tjtype1" />
+                        版面建议</label>
+                      <label for="tjtype2"><input type="radio" name="yjGroup" value="2" id="tjtype2" />
+                        功能建议</label>
+                        <label for="tjtype3"><input type="radio" name="yjGroup" value="3" id="tjtype3" />
+                        报告错误</label>
+                        <label for="tjtype0"><input type="radio" name="yjGroup" value="0" checked="checked" id="tjtype0" />
+                        其他</label>
+                    </p>
+                    <p class="p_txt"><span>内容：</span><textarea name="" cols="" id="yjcontent" rows=""></textarea></p>
+                    <p class="yj_btn"><input name="" type="button" onclick="goyijian();" value=" " /></p>
+            	</form>
+            </div>
+        </div>
+        
+  </div>
+    
+
+<div style="display:none">
+<script type="text/javascript" src="http://img.kanshu.com/public/js/tongji.js"></script>
+<script type="text/javascript" src="http://img.kanshu.com/public/js/gb.js"></script>
+<script type="text/javascript" src="http://img.kanshu.com/public/js/access.js"></script>
+</div> 
+</div>
+
+<script language="javascript" type="text/javascript" src="http://img.kanshu.com/ext/js/jquery.jSuggest.1.0.js"></script> 
+<script type="text/javascript" src="http://img.kanshu.com/ext/js/ymPrompt/ymPrompt.js"></script>
+<link rel="stylesheet" id='skin' type="text/css" href="http://img.kanshu.com/find/css/ymPrompt.css" />
+</body>
+</html>

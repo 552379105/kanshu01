@@ -1,0 +1,57 @@
+/*ͨ��*/
+*{margin:0;padding:0}
+/*��ҳ*/
+.w1200{
+    width:100%;
+    position:relative;
+    margin:0 auto;
+    height:30px;
+   
+}
+.index-head .top-bar{
+    height: 30px;
+    background: #fafafa;
+    font-size: 12px;
+    transform: translate(0,20px);
+}
+.s1{
+    color:#999999;
+    position: absolute;
+    left: 10%;
+}
+.s2{
+    width:90px;
+    color:#0081cc;
+    font-weight: 700;
+    position: absolute;
+    left: 1300px;
+}
+.s3{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 10%;
+    top: 30px;
+    margin-top: 30px;
+}
+.search{
+    position:relative;
+    left:500px;
+    top: 33px;
+    margin-top: 30px;
+    margin-right:40px;
+}
+.new-text {
+    width: 460px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #999999;
+    border:1px solid #0081cc;
+    margin-top: 30px;
+}
+.phone{
+    position:relative;
+    left: 1150px;
+}

@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<script  src="js/jquery-1.11.3.js"> </script>
+	<script   src="js/index.js">
+		
+	</script>
+
+</head>
+<body>
+	<div id="main" > <!--控制整个body-->
+		
+			<div class="search_l">
+					<!--整个搜索栏-->
+					<div class="top_1" ><img src="img/logo.png">  </div>	
+					<!--控制中间搜索栏-->
+				<div class="top_2" >
+				    <input type="text" name="" id="" value="" placeholder="搜书/搜作者">
+					    <a href="#" class="search_but" > <img src="img/search_btn.png"></a>
+				</div>
+				<!--控制右侧我的书架-->
+				<div class="top_3" > 
+					<a href="#"> <img src="img/mybooks_bg.png"> </a>		
+					<a href="#">我的书架</a>
+				</div>	
+			</div>
+			
+			<div class="search_2" > 	<!--网站的导航栏头部--> 
+			   
+			   <div class="fL"> 作品分类  <!--作品分类--> 
+			        </div>
+			 
+			 <ul class="decoration" > <!--作品分类--> 
+			 	<li><a href="#"> 女生</a> </li>
+			 	<li><a href="#">书库 </a> </li>
+			 	<li><a href="#">排行 </a> </li>
+			 	<li><a href="#">完本 </a> </li>
+			 	<li><a href="#"> 福利</a> </li>
+			 	<li><a href="login.html"> 申请作者</a> </li>
+			 </ul>
+			 
+		        <div class="recharge"> <a href="#" >充值</a> <!--充值--> </div>	 
+			 
+			</div>
+	         
+	   <div class="part1"><!--第一部分页面 part1 -->
+		  <div class="part1_1"> <!-- p1的左边第一个   -->
+		  	<div class="fL ">  
+		  	    <ul>
+		  	    	<li>
+		  	    		<a href="#"> <img src="img/dushi.png"/> 
+		  	    			<p >
+		  	    			都市
+		  	    		       </p>  
+		  	    		</a>
+		  	    	
+		  	    		<a href="#" class"light_border"> <img src="img/yanqing.png"/> 
+		  	    			<p >言情
+		  	    			</p>  
+		  	    		</a>
+		  	    		
+		  	    		<a href="#">  <img src="img/xuanhuan.png"/> 
+		  	    			<p >玄幻
+		  	    			</p>  
+		  	    			
+		  	    		</a>
+		  	    	</li>
+		  	    	<li>
+		  	    		<a href="#"><img src="img/xianxia.png"/> 
+		  	    			<p id="">
+		  	    			仙侠
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"  class"light_border"><img src="img/lishi.png"/> 
+		  	    			<p id="">
+		  	    			历史
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"><img src="img/junshi.png"/> 
+		  	    			<p id="">
+		  	    			军事
+		  	    		       </p></a>
+		  	    	</li>
+		  	    	<li>
+		  	    		<a href="#"><img src="img/wangyou.png"/> 
+		  	    			<p id="">
+		  	    			网游
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"  class"light_border"><img src="img/wuxia.png"/> 
+		  	    			<p id="">
+		  	    			武侠
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"><img src="img/lingyi.png"/> 
+		  	    			<p id="">
+		  	    		    灵异
+		  	    		       </p></a>
+		  	    	</li>
+		  	    	<li>
+		  	    		<a href="#"><img src="img/xianyan.png"/> 
+		  	    			<p id="">
+		  	    			现言
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"  class"light_border"><img src="img/guyan.png"/> 
+		  	    			<p id="">
+		  	    			古言
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"><img src="img/xiaoyuan.png"/> 
+		  	    			<p id="">
+		  	    			校园
+		  	    		       </p></a>
+		  	    	</li>
+		  	    	<li>
+		  	    		<a href="#"><img src="img/danmei.png"/> 
+		  	    			<p id="">
+		  	    			耽美
+		  	    		       </p></a>
+		  	    		     
+		  	    		<a href="#" class"light_border"><img src="img/tongren.png"/> 
+		  	    			<p id="">
+		  	    			同人
+		  	    		       </p></a>
+		  	    		      
+		  	    		<a href="#"><img src="img/quanbu.png"/> 
+		  	    			<p id="">
+		  	    			全部
+		  	    		       </p></a>
+		  	    	</li>
+		  	    </ul>
+		  	  </div>
+		  	<div  class="news">   
+			  	<div class="publish"> 
+			  		<a href="#"> <img src="img/newtip.png"/> </a> 
+			  	    <a href="#" class="target"> 新闻公告</a>
+			  	    <a href="#"> <img src="img/more.png"/></a>
+			  	</div>
+			  	<div class="n1">
+			  		<ul>
+			  			<li class="u1"><a href="#" title="第三届新媒体原创文学大赛颁奖典礼">第三届新媒体原创文学大赛颁奖典礼</a></li>
+			  			<li><a href="#" title="2018年网络文学发展状况问卷调查表">2018年网络文学发展状况问卷调查表</a></li>
+			  			<li><a href="#" title="关于看书网pc主站QQ无法登陆的问题">关于看书网pc主站QQ无法登陆的问题</a></li>
+			  		</ul>
+			  	</div>
+		  	
+		  	</div>
+		   </div>
+		   <div class="part1_2"> <!-- p1的 中间部分   -->
+			   <div class="lunbo1">  <!-- p1的轮播图   -->
+                  <ul>
+                  	<li><a href="#" ><img src="img/15410633645774.jpg" alt="" class="t1"></a></li>
+                  </ul>
+                 
+                   <a href="#" class="prev side"></a>
+                   <a href="#" class="next side"></a>
+			   <ul class="Lbtn">
+			   	<li> <a href="#">1</a></li>
+			   	<li> <a href="#">2</a></li>
+			   	<li> <a href="#">3</a></li>
+			   </ul>
+			   </div> 
+			   <!--
+               	作者：552379105@qq.com
+               	时间：2018-11-27
+               	描述：导航栏下方性别推荐书籍
+               -->
+			   <div class="sexbox">   
+			   
+                <div class="sexbook1">
+                	
+                	<div>	
+				   <a href="javascript:;" class="sexbtn boy_f" >男生</a>
+				    <a href="javascript:;" class="sexbtn  girl_f" >女生</a>
+			     </div>
+                	<!-- 首推书籍-->
+                	<div class="sexbook1_1 girl_t">
+                		<!-- 首推书籍第一块-->
+                		<a href="#" class="fp"> <img src="img/picture/2031517s.jpg">  </a>
+                		<!--首推书籍第一块图片-->
+                		<div class="fp_r">
+                			<a  href="#" class="top_detail"> 我想和你白头到老  </a>
+                			<div class="detail">婚姻不过是一场谁先认真谁先输的游戏，而我全部的愿望就是和你一起白头到老。</div>
+                			<div class="bot_detail">
+                				<div>2791人追读</div>
+                				<a href="#">免费试读</a>
+                			</div>
+                		</div>
+                	</div>
+                		<div class="sexbook1_1 boy_t" style="display: none;">
+                		<!-- 男生首推书籍第一块-->
+                		<a href="#" class="fp"> <img src="img/picture/2031150_m.jpg">  </a>
+                		<!--男生首推书籍第一块图片-->
+                		<div class="fp_r">
+                			<a  href="#" class="top_detail"> 大明海枭  </a>
+                			<div class="detail">大明皇帝为他主婚，西班牙皇帝给他授勋，英国皇帝为他设宴，罗马教皇给他赐福......他是这个时代最耀眼的明星，他的朋友圈里星光闪耀，他的身价富可敌国，他的闺蜜遍布全球。
+</div>
+                			<div class="bot_detail">
+                				<div>3891人追读</div>
+                				<a href="#">免费试读</a>
+                			</div>
+                		</div>
+                	</div>
+                	
+                	<div class="sexbook1_2   girl_t"> <!--首推书籍第二块--> 
+                	<a href="#" class="fp"> <img src="img/picture/2039724s.jpg">  </a>
+                		<!--首推书籍第二块图片-->
+                		<div class="fp_r">
+                			<a  href="#" class="top_detail">先婚后爱：权少的迷糊小老婆</a>
+                			<div class="detail">苏烟怎么也想不到交往了四年的男朋友会为了前途而选择另一个世家女，既然这样，那她选择放手。可是对方却不依不饶，几次出现在她面前秀恩爱！她忍让，对方却越发嚣张。
+								　　苏烟：“我已经有男朋友了。”
+								　　谁知她在马路上随便找的男人竟然这么优质，而且还全力配合她。她感动的想以身相许，结果人家说，他需要一个能洗衣做到拖地的人。
+								　　苏烟傻兮兮的被带回家，发现自己的老公是一个经常出任务的军人，而且她什么都不用做，只要被宠爱就行了！
+								　　婆婆：“宝贝儿媳妇，这是婆婆炖了几小时的汤，快喝。”
+								　　公公：“你那些客户要敢欺负你，你就告诉我，我让他们消失！”
+								　　老公：“我老婆是我的，你们谁也别想霸占！”
+								………………
+								婚前：
+								苏烟：“你为什么帮我。”
+								沈祐：“我是军人，为人民服务是应该的。”
+								婚后：
+								苏烟：“你最喜欢>吃什么。”
+								沈祐：“吃你。”
+								【欢迎跳坑~】</div>
+                			<div class="bot_detail">
+                				<div>2791人追读</div>
+                				<a href="#">免费试读</a>
+                			</div>
+                		</div>
+                	</div>
+                   
+            		<div class="sexbook1_2  boy_t" style="display: none;">
+                		<!-- 男生首推书籍第二块-->
+                		<a href="#" class="fp"> <img src="img/picture/2035360s.jpg">  </a>
+                		<!--男生首推书籍第二块图片-->
+                		<div class="fp_r">
+                			<a  href="#" class="top_detail"> 流星武神  </a>
+                			<div class="detail">大明皇帝为他主婚，西班牙皇帝给他授勋，英国皇帝为他设宴，罗马教皇给他赐福......他是这个时代最耀眼的明星，他的朋友圈里星光闪耀，他的身价富可敌国，他的闺蜜遍布全球。
+</div>
+                			<div class="bot_detail">
+                				<div>3891人追读</div>
+                				<a href="#">免费试读</a>
+                			</div>
+                		</div>
+                	</div>
+
+                </div>
+                <!--男女生推荐下方的列表-->
+                  <div class="sexbox_bto"> 
+                    <div class="my_list">  
+                    <ul>
+                    	<li class="my_list_1"><a href="#" title="南无袈裟理科佛：苗疆蛊事 " >南无袈裟理科佛：苗疆蛊事 </a></li>
+                    	<li><a href="#" title="大道交错，剑者独尊">大道交错，剑者独尊</a></li>
+                    	<li><a href="#" title="正天道最后一代掌教传人的传奇故事">正天道最后一代掌教传人的传奇故事</a></li>
+                    	<li><a href="#" title="炼尸寻人秘术：走尸档案">炼尸寻人秘术：走尸档案</a></li>
+                    </ul>
+                    </div>
+                     
+                     <div class="my_list">
+                     	<ul>
+                     		<li class="my_list_1"><a href="#" title="重生之绝品狂少" >重生之绝品狂少</a></li>
+                     		<li><a href="#" title="来来往往：我的贴身美女总裁">来来往往：我的贴身美女总裁</a></li>
+                     		<li><a href="#" title="铁拳所向，试问谁可争锋？">铁拳所向，试问谁可争锋？</a></li>
+                     		<li><a href="#" title="上古传奇，成就透视医圣">上古传奇，成就透视医圣</a></li>
+                     	</ul>
+                     	
+                     </div>
+                     
+                  
+                  </div>
+
+			   </div>
+		    </div>
+		    
+		   <div class="part1_3">   <!-- p1的 右边的部分   --> 
+		   	<div class="recommed">本站强推</div>
+	       <ul>
+	       	<li class="qtlist_top">
+	       	
+	       		  	<span class="list_top">1</span>
+	       	         <a href="#"><img src="img/picture/2055986_m.jpg"  class="picture_1"></a>
+	       	     	
+	       	     <div class="qtlist_top_1">	
+	       	          <div class="first_top">魔变</div>
+	       	          <div>玄幻奇幻</div>
+	       	          <div>是那一根黄瓜</div>
+	       	     </div>
+	       	</li>
+	       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>剑天子</a></li>
+	       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>死间道</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>最强王者</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>嘲讽系统</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>妖孽狂龙</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>医武世家</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">8</span> 灭灵戮仙传</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>绝品强者在都市</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>从仙门走出来的人</a></li>
+	       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+	       </ul> 
+	       </div>
+   
+   </div>        
+        <a href="#" class="part1_foot"> </a>
+     </div>  
+     <!--大神专区-->  
+       <div class="Ds_zq">  <span class="stil"></span> <span class="Ds_zq_1"> 大神专区</span>   <a href="#" class="more_1"> 查看更多&gt&gt</a></div>      
+         <div class="Ds_zq_clearbox"> 
+            <ul class="books">
+	          	<li class="clearfix"> 
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/2039899s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         林深森
+	          	  </div>
+	          	    <div class="bname"> 半步帝临</div>  	    
+	          	    <div class="mark_1"> <span class="mark">传统</span>
+	          	    	<span class="mark">天才</span> <span class="mark"> 修真</span>
+	          	    </div> 
+	          		</a>    	   
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/2027453s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         刘阿八
+	          	  </div>
+	          	    <div class="bname"> 万花丛中过</div>  	    
+	          	    <div class="mark_1"> <span class="mark">爽文</span>
+	          	    	<span class="mark">猥琐</span> <span class="mark">搞笑</span>
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/173220s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	       牛凳 
+	          	  </div>
+	          	    <div class="bname">奋斗在盛唐</div>  	    
+	          	    <div class="mark_1"><span class="mark">斗智</span>
+	          	    	<span class="mark">纨绔</span> <span class="mark">生活</span>
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/35555s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         齐成琨
+	          	  </div>
+	          	    <div class="bname">天价新娘要跑路</div>  	    
+	          	    <div class="mark_1"> 
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/20575s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         烈阳化海
+	          	  </div>
+	          	    <div class="bname"> 穿越之抗日猎人</div>  	    
+	          	    <div class="mark_1"> 
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/7936s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         炒青
+	          	  </div>
+	          	    <div class="bname">大赌石</div>  	    
+	          	    <div class="mark_1"> <span class="mark">爽文</span>
+	          	    	<span class="mark">斗智</span>
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/17580s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         盐水煮蛋
+	          	  </div>
+	          	    <div class="bname">神医修龙</div>  	    
+	          	    <div class="mark_1"> <span class="mark">热血</span>
+	          	    	<span class="mark">法宝</span>
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/19214s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         花开的石头
+	          	  </div>
+	          	    <div class="bname">至尊逍遥仙</div>  	    
+	          	    <div class="mark_1"> <span class="mark">热血</span>
+	          	    	<span class="mark">奇遇</span> <span class="mark">神魔</span>
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/9623s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         王不小
+	          	  </div>
+	          	    <div class="bname"> 三国霸主</div>  	    
+	          	    <div class="mark_1"> <span class="mark">重生</span>
+	          	    	<span class="mark">热血</span> <span class="mark">铁血</span>
+	          	    </div> 
+	          		</a> 
+	          	</li>
+	          	<li  class="clearfix">         		
+	          		<a href="#">
+	          		<div class="img_border"> 
+	          			<img src="img/picture/2033685s.jpg" alt="" />          		
+	          		</div>
+	          	  <div class="author"> 
+	          	         竹香竹屋
+	          	  </div>
+	          	    <div class="bname">花豹突击队</div>  	    
+	          	    <div class="mark_1">
+	          	    </div> 
+	          		</a> 
+	          	</li>
+          </ul>
+           <div class="part1_3">   <!-- p1的 右边的部分   --> 
+		   	<div class="recommed">精品小说人气榜    <span class="week active">周</span> <span class="month active"> 月</span></div>
+		   	   
+	       <ul class="week_list">
+	       	<li class="qtlist_top">
+	       	
+	       		  	<span class="list_top">1</span>
+	       	         <a href="#"><img src="img/picture/2037926s.jpg"  class="picture_1"></a>
+	       	     	
+	       	     <div class="qtlist_top_1">	
+	       	          <div class="first_top">重生之绝品狂少</div>
+	       	          <div>都市言情</div>
+	       	          <div>小妖</div>
+	       	     </div>
+	       	</li>
+	       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>花都最强神医</a></li>
+	       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>逍遥小神农</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>道法通天</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>武道邪神</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>死间道</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>纯阳</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">8</span>绝品强者在都市</li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>天外有仙</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>通天仕途</a></li>
+	       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+	       </ul> 
+	       <ul class="month_list">
+	       	<li class="qtlist_top">
+	       	
+	       		  	<span class="list_top">1</span>
+	       	         <a href="#"><img src="img/picture/2037926s.jpg"  class="picture_1"></a>
+	       	     	
+	       	     <div class="qtlist_top_1">	
+	       	          <div class="first_top">重生之绝品狂少</div>
+	       	          <div>都市言情</div>
+	       	          <div>小妖</div>
+	       	     </div>
+	       	</li>
+	       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>花都最强神医</a></li>
+	       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>逍遥小神农</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>道法通天</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>武道邪神</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>绝品强者在都市</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>死间道</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">8</span>纯阳</li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>天外有仙</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>半步帝临</a></li>
+	       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+	       </ul>
+           </div>
+         
+         </div>
+        <!--男生专区-->
+        <div class="Ds_zq">  <span class="stil"></span> <span class="Ds_zq_1"> 男生专区</span>   <a href="#" class="more_1"> 查看更多&gt&gt</a></div>      
+         <div class="Ds_zq_clearbox">	
+           <div class="singlebook">   
+               <a href="#" class="Simg"> <img src="img/picture/2031150_m.jpg"/></a>
+               <div class="Sbookname">   
+               		<a href="#">大明海枭</a>
+               </div>
+               <div class="Stype"> 
+                	<a href="#">历史军事</a>
+                	<b>|</b>
+                    <a href="#">卷风</a>
+               </div>
+               <div class="Sreadpp"> 追读人数：23061 </div>
+               <div class="Sdetail"> 简介：大明皇帝为他主婚，西班牙皇帝给他授勋，英国皇帝为他设宴，罗马教皇给他赐福......他是这个时代最耀眼的明星，他的朋友圈里星光闪耀，他的身价富可敌国，他的闺蜜遍布全球。
+他就是方杰，一个在大航海时代，力挽狂澜的男人！</div>
+                <div class="Artical"> 最近更新：第991章 暗度陈仓</div>
+                <a href="#" class="freeread">免费试读</a>
+           </div>
+           <div class="books_m">	
+              <div class="clear_bok">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2042081_m.jpg"/> </a>
+                  <div class="pol_clear">
+                  	<div class="clear_bok_pn"> 道法通天</div>
+                  	<div class="clear_bok_pd">武者，肉身成圣，拳镇山河。 
+							      道法高人，拘鬼役神，杀人于千里之外。
+							      且看江阳如何道法、武道同修，纵横九天十地，成就无上道祖！ 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#">玄幻奇幻</a>
+                  	   <b>|</b>
+                  	   <a href="#">骑着蜗牛去旅行</a>
+                  	</div>
+                  </div>
+              
+              </div>
+               <div class="clear_bok">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2042081_m.jpg"/> </a>
+                  <div class="pol_clear">
+                  	<div class="clear_bok_pn"> 道法通天</div>
+                  	<div class="clear_bok_pd">武者，肉身成圣，拳镇山河。 
+							      道法高人，拘鬼役神，杀人于千里之外。
+							      且看江阳如何道法、武道同修，纵横九天十地，成就无上道祖！ 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#">玄幻奇幻</a>
+                  	   <b>|</b>
+                  	   <a href="#">骑着蜗牛去旅行</a>
+                  	</div>
+                  </div>
+              
+              </div>
+                 <div class="clear_bok">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2042081_m.jpg"/> </a>
+                  <div class="pol_clear">
+                  	<div class="clear_bok_pn"> 道法通天</div>
+                  	<div class="clear_bok_pd">武者，肉身成圣，拳镇山河。 
+							      道法高人，拘鬼役神，杀人于千里之外。
+							      且看江阳如何道法、武道同修，纵横九天十地，成就无上道祖！ 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#">玄幻奇幻</a>
+                  	   <b>|</b>
+                  	   <a href="#">骑着蜗牛去旅行</a>
+                  	</div>
+                  </div>
+              
+              </div>
+ <div class="clear_bok">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2042081_m.jpg"/> </a>
+                  <div class="pol_clear">
+                  	<div class="clear_bok_pn"> 道法通天</div>
+                  	<div class="clear_bok_pd">武者，肉身成圣，拳镇山河。 
+							      道法高人，拘鬼役神，杀人于千里之外。
+							      且看江阳如何道法、武道同修，纵横九天十地，成就无上道祖！ 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#">玄幻奇幻</a>
+                  	   <b>|</b>
+                  	   <a href="#">骑着蜗牛去旅行</a>
+                  	</div>
+                  </div>
+              
+              </div>
+ <div class="clear_bok">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2042081_m.jpg"/> </a>
+                  <div class="pol_clear">
+                  	<div class="clear_bok_pn"> 道法通天</div>
+                  	<div class="clear_bok_pd">武者，肉身成圣，拳镇山河。 
+							      道法高人，拘鬼役神，杀人于千里之外。
+							      且看江阳如何道法、武道同修，纵横九天十地，成就无上道祖！ 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#">玄幻奇幻</a>
+                  	   <b>|</b>
+                  	   <a href="#">骑着蜗牛去旅行</a>
+                  	</div>
+                  </div>
+              
+              </div>
+ <div class="clear_bok">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2042081_m.jpg"/> </a>
+                  <div class="pol_clear">
+                  	<div class="clear_bok_pn"> 道法通天</div>
+                  	<div class="clear_bok_pd">武者，肉身成圣，拳镇山河。 
+							      道法高人，拘鬼役神，杀人于千里之外。
+							      且看江阳如何道法、武道同修，纵横九天十地，成就无上道祖！ 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#">玄幻奇幻</a>
+                  	   <b>|</b>
+                  	   <a href="#">骑着蜗牛去旅行</a>
+                  	</div>
+                  </div>
+              
+              </div>
+
+
+           </div>
+           <div class="part1_3">   <!-- p1的 右边的部分   --> 
+		   	<div class="recommed">精品小说人气榜    <span class="week active">周</span> <span class="month active"> 月</span></div>
+		   	   
+	       <ul class="week_list">
+	       	<li class="qtlist_top">
+	       	
+	       		  	<span class="list_top">1</span>
+	       	         <a href="#"><img src="img/picture/2037926s.jpg"  class="picture_1"></a>
+	       	     	
+	       	     <div class="qtlist_top_1">	
+	       	          <div class="first_top">重生之绝品狂少</div>
+	       	          <div>都市言情</div>
+	       	          <div>小妖</div>
+	       	     </div>
+	       	</li>
+	       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>花都最强神医</a></li>
+	       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>逍遥小神农</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>道法通天</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>武道邪神</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>死间道</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>纯阳</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">8</span>绝品强者在都市</li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>天外有仙</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>通天仕途</a></li>
+	       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+	       </ul> 
+	       <ul class="month_list">
+	       	<li class="qtlist_top">
+	       	
+	       		  	<span class="list_top">1</span>
+	       	         <a href="#"><img src="img/picture/2037926s.jpg"  class="picture_1"></a>
+	       	     	
+	       	     <div class="qtlist_top_1">	
+	       	          <div class="first_top">重生之绝品狂少</div>
+	       	          <div>都市言情</div>
+	       	          <div>小妖</div>
+	       	     </div>
+	       	</li>
+	       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>花都最强神医</a></li>
+	       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>逍遥小神农</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>道法通天</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>武道邪神</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>绝品强者在都市</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>死间道</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">8</span>纯阳</li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>天外有仙</a></li>
+	       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>半步帝临</a></li>
+	       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+	       </ul>
+          </div> 
+   
+         
+         </div>
+    <!--女生专区-->      
+     <div class="Ds_zq">  <span class="stil"></span> <span class="Ds_zq_1"> 女生专区</span>   <a href="#" class="more_1"> 查看更多&gt&gt</a></div>      
+
+    <div class="Ds_zq_clearbox">
+    	<!--女生专区左边-->
+         <div class="girl_book">
+         	<!--女生专区第一块-->
+         	<div class="girl_book_top">
+         	  <div class="clear_bok" style="height:176.6px; padding-left:25px; padding-right:15px; padding-top:19.3px">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2056032_m.jpg"/> </a>
+                  <div class="girl_b_clear">
+                  	<div class="clear_bok_pn"> 娇宠毒妃：邪王，不好撩</div>
+                  	<div class="girl_bokd">曾经，她心中只系一人。本以为伴他登基便得君心享圣宠，却不了满门灭族是爱他一场换来的结局。重生，那个痴情的自己早已死去……一步一步，步步为营，所有辜负她的人一个一个慢慢收拾……
+只因聪慧出众，有人对她刮目相看！
+“令仪，你若是男人，天下就是你的。可惜你是女人……那我坐天下，你坐我怀里可好？” 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#"> 古代言情 </a>
+                  	   <b>|</b>
+                  	   <a href="#">欧阳红豆</a>
+                  	</div>
+                  </div>
+              
+              </div>
+         	<div class="clear_bok" style="height:176.6px; padding-left:25px; padding-right:15px; padding-top:19.3px">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2056032_m.jpg"/> </a>
+                  <div class="girl_b_clear">
+                  	<div class="clear_bok_pn"> 娇宠毒妃：邪王，不好撩</div>
+                  	<div class="girl_bokd">曾经，她心中只系一人。本以为伴他登基便得君心享圣宠，却不了满门灭族是爱他一场换来的结局。重生，那个痴情的自己早已死去……一步一步，步步为营，所有辜负她的人一个一个慢慢收拾……
+只因聪慧出众，有人对她刮目相看！
+“令仪，你若是男人，天下就是你的。可惜你是女人……那我坐天下，你坐我怀里可好？” 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#"> 古代言情 </a>
+                  	   <b>|</b>
+                  	   <a href="#">欧阳红豆</a>
+                  	</div>
+                  </div>
+              
+              </div>
+         	
+         	<div class="clear_bok" style="height:176.6px; padding-left:25px; padding-right:15px; padding-top:19.3px">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2056032_m.jpg"/> </a>
+                  <div class="girl_b_clear">
+                  	<div class="clear_bok_pn"> 娇宠毒妃：邪王，不好撩</div>
+                  	<div class="girl_bokd">曾经，她心中只系一人。本以为伴他登基便得君心享圣宠，却不了满门灭族是爱他一场换来的结局。重生，那个痴情的自己早已死去……一步一步，步步为营，所有辜负她的人一个一个慢慢收拾……
+只因聪慧出众，有人对她刮目相看！
+“令仪，你若是男人，天下就是你的。可惜你是女人……那我坐天下，你坐我怀里可好？” 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#"> 古代言情 </a>
+                  	   <b>|</b>
+                  	   <a href="#">欧阳红豆</a>
+                  	</div>
+                  </div>
+              
+              </div>
+         	
+         	<div class="clear_bok" style="height:176.6px; padding-left:25px; padding-right:15px; padding-top:19.3px">   
+                 <a href="#" class="clear_bok_p"> <img src="img/picture/2056032_m.jpg"/> </a>
+                  <div class="girl_b_clear">
+                  	<div class="clear_bok_pn"> 娇宠毒妃：邪王，不好撩</div>
+                  	<div class="girl_bokd">曾经，她心中只系一人。本以为伴他登基便得君心享圣宠，却不了满门灭族是爱他一场换来的结局。重生，那个痴情的自己早已死去……一步一步，步步为营，所有辜负她的人一个一个慢慢收拾……
+只因聪慧出众，有人对她刮目相看！
+“令仪，你若是男人，天下就是你的。可惜你是女人……那我坐天下，你坐我怀里可好？” 
+                  	</div>
+                  	<div class="clear_bok_1"> 
+                  	   <a href="#"> 古代言情 </a>
+                  	   <b>|</b>
+                  	   <a href="#">欧阳红豆</a>
+                  	</div>
+                  </div>
+              
+              </div>
+         	
+         </div>   	
+         <!--女生专区下方第二块-->
+            <div class="type_books">
+            	<div class="Tab_title">
+            		<span  >现代言情 </span>
+            		<span >古代言情</span>
+            	    <span >校园文学</span>
+            	</div>
+            	<div  class="tab_bar">
+            	   <div class="Tab_content  modlit ">
+            		<ul>
+            			<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            		</ul>
+            		 <ul>
+            			<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">别离不朽，伤怀盛开</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            		</ul>
+            		 
+            	</div>
+            	
+            		<div class="Tab_content   acient  " style="display:none" >
+            		<ul>
+            			<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            		</ul>
+            		 <ul>
+            			<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情]</span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[古代言情] </span>
+            				    <a href="#">将进酒</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            		</ul>
+            		 
+            	</div>
+            	
+            		<div class="Tab_content  school"  style="display: none;">
+            		<ul>
+            			<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[校园文学] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            		</ul>
+            		 <ul>
+            			<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            				<li class="clear_fix">
+            				<div class="fl">  
+            				    <span class="style">[现代言情] </span>
+            				    <a href="#">腹黑伪校草</a>
+            				</div>
+            				<div class="fr">
+            					<span>2018-12-09</span>
+            					<span>完结</span>
+            					
+            				</div>
+            			</li>
+            		</ul>
+            		 
+            	</div>
+            	
+            	</div>
+            	
+            	
+            	
+            </div>
+		            
+		            
+		            </div>
+		     <!-- 女生专区右边的部分   -->
+		      <div class="part1_3">
+				   	<div class="recommed">精品小说人气榜    <span class="week active">周</span> <span class="month active"> 月</span></div> 
+			       <ul class="week_list">
+			       	<li class="qtlist_top">
+			       	
+			       		  	<span class="list_top">1</span>
+			       	         <a href="#"><img src="img/picture/2037926s.jpg"  class="picture_1"></a>
+			       	     	
+			       	     <div class="qtlist_top_1">	
+			       	          <div class="first_top">重生之绝品狂少</div>
+			       	          <div>都市言情</div>
+			       	          <div>小妖</div>
+			       	     </div>
+			       	</li>
+			       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>花都最强神医</a></li>
+			       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>逍遥小神农</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>道法通天</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>武道邪神</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>死间道</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>纯阳</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">8</span>绝品强者在都市</li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>天外有仙</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>通天仕途</a></li>
+			       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+			       </ul>    
+		    </div>
+		   
+		    </div>
+		    <!--最新作品--> 
+		    <div class="menus_list"> <span class="menus">最新更新小说</span> <span class=" menus">VIP小说更新</span><span class=" menus">最新签约作品</span><span class=" menus">作品更新次数</span> 
+		    	<a href="#" class="more_1" style="line-height:80px"> 查看更多&gt&gt</a> </div>      
+		   <div class="Ds_zq_clearbox" style="height:1031">
+		    <div class="list_left">  
+		    <ul class="tablelist">
+		    	<li class="list_title">
+		    		<div> 分类</div>
+		    		<div> 书名</div>
+		    		<div> 更新章节</div>
+		    		<div> 作者</div>
+		    		<div> 更新字数</div>    		
+		    	</li>
+		    	<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="3">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span></span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    		<li class="clear_table">
+		    		<div> <a href="#">都市言情</a></div>
+		    		<div> <a href="#">火爆兵王 </a></div>
+		    		<div> <a href="#">第2723章 掌控天道（终章）</a> <span> </span></div>
+		    		<div> <a href="#">掠痕</a></div>
+		    		<div> 8436898</div>
+		    	</li>
+		    	
+		    </ul>
+		  
+			    <div class="link">
+			    	<div class="link_cont"> 
+			    	 <p> 
+			    	 <span> 友情链接 </span>
+			    	 <span> 好书推荐 </span>
+			    	 </p>    	
+			    	</div>    	   	
+			    <div class="link_name"> 
+				    <ul>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>
+				    	<a href="#" > 纵横中文网 </a>		    	
+				    </ul>
+			    
+			    </div>
+			
+		    </div>
+		    </div>
+		    
+		    
+    
+		    <div class="list_right">
+		      	  <div class="part1_3">
+				   	<div class="recommed">精品小说人气榜    <span class="week active">周</span> <span class="month active"> 月</span></div> 
+			       <ul class="week_list">
+			       	<li class="qtlist_top">
+			       	
+			       		  	<span class="list_top">1</span>
+			       	         <a href="#"><img src="img/picture/2037926s.jpg"  class="picture_1"></a>
+			       	     	
+			       	     <div class="qtlist_top_1">	
+			       	          <div class="first_top">重生之绝品狂少</div>
+			       	          <div>都市言情</div>
+			       	          <div>小妖</div>
+			       	     </div>
+			       	</li>
+			       	<li class="my_list2 "> <a href="#" class="list_top_color2"> <span class="list_btn list_top2">2</span>花都最强神医</a></li>
+			       	<li class="my_list2"> <a href="#" class="list_top_color3"> <span class="list_btn list_top3">3</span>逍遥小神农</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">4</span>道法通天</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">5</span>武道邪神</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">6</span>死间道</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">7</span>纯阳</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">8</span>绝品强者在都市</li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">9</span>天外有仙</a></li>
+			       	<li class="my_list2"><a href="#"><span class="list_btn">10</span>通天仕途</a></li>
+			       	<li class="my_list2"><a href="#">&gt&gt查看更多</a></li>
+			       </ul>    
+		    </div>
+		   
+		            <div class="android" style="margin-top:28px">
+		            	<div> 安卓客户端下载</div>
+		            	<div>
+		            		<img src="img/picture/app.png"/>
+		            		
+		            	</div>
+		            	
+		            </div>
+		      	  <div class="android">
+		            	<div> 微信公众平台</div>
+		            	<div>
+		            		<img src="img/picture/15161756564416.png"/>
+		            		
+		            	</div>
+		            	
+		            </div>
+		      	
+		      </div>
+    
+</div>
+</body>
+</html>
